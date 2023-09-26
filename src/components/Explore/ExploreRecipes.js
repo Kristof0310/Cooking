@@ -19,8 +19,6 @@ class ExploreRecipes extends React.Component {
         this.mealDBServices = new MealDBServices();
         this.recipeServices = new RecipeServices();
         const obj = getFromStorage('project_april');
-
-
         this.state = {
             recipes: [],
             unsortedRecipes: [],
@@ -102,7 +100,6 @@ class ExploreRecipes extends React.Component {
         }
     }
 
-
     componentDidMount() {
         this.mealDBServices.findAllCategories()
             .then(filterCategory => {
@@ -114,7 +111,6 @@ class ExploreRecipes extends React.Component {
             .then(recipes => {
                 recipes.meals.map(recipe => {
                         allRecipes = [...allRecipes, recipe];
-                        console.log("After API count" + allRecipes.length)
                     }
                 )
             })

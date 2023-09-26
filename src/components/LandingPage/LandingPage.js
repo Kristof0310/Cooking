@@ -20,13 +20,7 @@ class LandingPage extends Component {
         this.state = {
             popularRecipes: []
         };
-        // var recipes = this.findPopularRecipes();
-        // console.log("Recipes"+recipes);
-
-
     }
-
-
 
     componentWillMount() {
         document.title = "What's Cooking?";
@@ -36,8 +30,6 @@ class LandingPage extends Component {
                 ({popularRecipes: recipes})
             });
     }
-
-
 
     render() {
         console.log(this.state.popularRecipes);
