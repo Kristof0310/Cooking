@@ -4,8 +4,6 @@ import '../../../node_modules/bootstrap/dist/css/bootstrap.css';
 
 
 export const LandingPageFooter = () => {
-
-
     {
         return (
             <div className="footer-area">
